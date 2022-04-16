@@ -1,0 +1,25 @@
+.footer {
+    display: flex;
+    background-color: black;
+    padding: 1rem;
+    margin-top: 2vh;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    height: 2vh;
+    font-family: 'Poppins';
+}
+
+.contact {
+    display: flex;
+}
+
+.socials {
+    color: white;
+    margin: 0 1rem;
+    text-align: center;
+}
+
+.socials i {
+    margin-left: 0.5rem;
+}
