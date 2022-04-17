@@ -19,7 +19,7 @@ const News = () => {
   }, []);
   return (
     <div>
-      <div className="content">
+      <div className="contentF">
         <h1>Latest News</h1>
       </div>
       <div className="newsall">

@@ -1,12 +1,11 @@
 .footer {
     display: flex;
     background-color: black;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
     margin-top: 2vh;
     color: white;
     justify-content: space-between;
     align-items: center;
-    height: 2vh;
     font-family: 'Poppins';
 }
 

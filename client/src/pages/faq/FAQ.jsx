@@ -11,15 +11,15 @@ function FAQ() {
     },
     {
       question:
-        "I would like to my articles. How do I make a good edit that will improve the quality of the post?",
+        "I would like to edit my articles. How do I make a good edit that will improve the quality of the post?",
       answer:
-        "Make your edits as complete as possible and Do not edit spam posts.In addition,Do not edit code in questions unless you know exactly what you are doing.Lastly, Write a relevant Edit Summary and Avoid putting unnesscary tags in your articles.",
+        "Make your edits as complete as possible and DO NOT edit spam posts. Additionally, do not edit code in questions unless you know exactly what you are doing. Lastly, write a relevant Edit Summary and avoid putting unnesscary tags in your articles.",
       open: false,
     },
     {
       question: "Is it okay to ask for code optimization help?",
       answer:
-        "Consider what it is you are asking.If you have actually profiled the code, have specific snippets so that everyone can run the same code to see its performance, and you have this library publicly published somewhere, like GitHub, Bitbucket, or another public facing code repository, then asking it on Code Review is acceptable.If you are just starting the code but have profiled an exact snippet that exhibits the aberrant performance, then asking it on Stack Overflow is acceptable.Per the above, including the results from your profiler of choice with identified bottlenecks would go a long way towards keeping it on topic on either site. However, if you are looking for someone to help you optimize the code without having done any of the due diligence mentioned prior, reconsider posting your question. It is important that you demonstrate why you believe that your piece of code is not performant, as well as provide as much evidence as you can to back it up.",
+        "Consider what it is you are asking. If you have actually profiled the code, have specific snippets so that everyone can run the same code to see its performance, and you have this library publicly published somewhere, like GitHub, Bitbucket, or another public facing code repository, then asking if Code Review is acceptable. If you are just starting the code but have profiled an exact snippet that exhibits the aberrant performance, then asking it on Stack Overflow is acceptable. Per the above, including the results from your profiler of choice with identified bottlenecks would go a long way towards keeping it on topic on either site. However, if you are looking for someone to help you optimize the code without having done any of the due diligence mentioned prior, reconsider posting your question. It is important that you demonstrate why you believe that your piece of code is not performant, as well as provide as much evidence as you can to back it up.",
       open: false,
     },
     {
@@ -49,7 +49,7 @@ function FAQ() {
   };
   return (
     <div className="App">
-      <div className="content">
+      <div className="contentF">
         <h1>FAQ</h1>
       </div>
       <div className="faqs">

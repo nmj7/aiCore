@@ -1,6 +1,4 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
-import ResearchItem from "./ResearchItem.js";
+import React from "react";
 import "./researchItem.css";
 import arxiv from "arxiv-api";
 
@@ -72,7 +70,7 @@ const Research = () => {
     });
   return (
     <div>
-      <div className="content">
+      <div className="contentR">
         <h1>Enhance your knowledge!</h1>
         <h2 className="h">Check out these papers!</h2>
       </div>
@@ -100,12 +98,12 @@ const Research = () => {
               <br />
               <h2>
                 {/* <a href={url} class="res" target="_blank"> */}
-                <a class="res" href="/" id="titl2" target="_blank"></a>
+                <a class="res" href="/" id="titl5" target="_blank"></a>
               </h2>
               <br />
-              <p class="des" id="des2"></p>
+              <p class="des" id="des5"></p>
               <br />
-              <h4 class="auth" id="auth2"></h4>
+              <h4 class="auth" id="auth5"></h4>
             </div>
           </div>
         </div>
@@ -116,12 +114,12 @@ const Research = () => {
               <br />
               <h2>
                 {/* <a href={url} class="res" target="_blank"> */}
-                <a class="res" href="/" id="titl3" target="_blank"></a>
+                <a class="res" href="/" id="titl2" target="_blank"></a>
               </h2>
               <br />
-              <p class="des" id="des3"></p>
+              <p class="des" id="des2"></p>
               <br />
-              <h4 class="auth" id="auth3"></h4>
+              <h4 class="auth" id="auth2"></h4>
             </div>
           </div>
         </div>
@@ -141,19 +139,19 @@ const Research = () => {
             </div>
           </div>
         </div>
-
+        
         <div>
           <div className="r-app">
             <div className="r-item">
               <br />
               <h2>
                 {/* <a href={url} class="res" target="_blank"> */}
-                <a class="res" href="/" id="titl5" target="_blank"></a>
+                <a class="res" href="/" id="titl3" target="_blank"></a>
               </h2>
               <br />
-              <p class="des" id="des5"></p>
+              <p class="des" id="des3"></p>
               <br />
-              <h4 class="auth" id="auth5"></h4>
+              <h4 class="auth" id="auth3"></h4>
             </div>
           </div>
         </div>
