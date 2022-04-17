@@ -1,18 +1,22 @@
-import React, { useContext } from 'react';
+import React, { useContext } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import Navbar from "./components/navbar/Navbar"
-import Footer from './components/footer/Footer.jsx';
-import Home from "./pages/home/Home"
+import Navbar from "./components/navbar/Navbar";
+import Footer from "./components/footer/Footer.jsx";
+import Home from "./pages/home/Home";
 import SinglePost from "./pages/singlePost/Single";
-import Write from "./pages/write/Write"
-import Settings from './pages/settings/Settings';
-import Login from './pages/login/Login';
-import Signup from './pages/signin/Signup'
-import { Context } from './context/Context';
+import Write from "./pages/write/Write";
+import Settings from "./pages/settings/Settings";
+import Login from "./pages/login/Login";
+import Signup from "./pages/signin/Signup";
+import { Context } from "./context/Context";
+
+import News from "./pages/news/News";
+import Research from "./pages/research/Research";
+import FAQ from "./pages/faq/FAQ";
 
 function App() {
-  const {user} = useContext(Context);
+  const { user } = useContext(Context);
   return (
     <Router>
       <Switch>
@@ -27,10 +31,26 @@ function App() {
           <Footer />
         </Route>
         <Route path="/signup">
-          {user ? <><Navbar /><Home /><Footer /></> : <Signup />}
+          {user ? (
+            <>
+              <Navbar />
+              <Home />
+              <Footer />
+            </>
+          ) : (
+            <Signup />
+          )}
         </Route>
         <Route path="/login">
-          {user ? <><Navbar /><Home /><Footer /></> : <Login />}
+          {user ? (
+            <>
+              <Navbar />
+              <Home />
+              <Footer />
+            </>
+          ) : (
+            <Login />
+          )}
         </Route>
         <Route path="/post/:id">
           <Navbar />
@@ -38,10 +58,42 @@ function App() {
           <Footer />
         </Route>
         <Route path="/write">
-          {user ? <><Navbar /><Write /><Footer /></> : <Login />}
+          {user ? (
+            <>
+              <Navbar />
+              <Write />
+              <Footer />
+            </>
+          ) : (
+            <Login />
+          )}
         </Route>
         <Route path="/settings">
-          {user ? <><Navbar /><Settings /><Footer /></> : <Login />}
+          {user ? (
+            <>
+              <Navbar />
+              <Settings />
+              <Footer />
+            </>
+          ) : (
+            <Login />
+          )}
+        </Route>
+
+        <Route exact path="/news">
+          <Navbar />
+          <News />
+          <Footer />
+        </Route>
+        <Route path="/research">
+          <Navbar />
+          <Research />
+          <Footer />
+        </Route>
+        <Route exact path="/faq">
+          <Navbar />
+          <FAQ />
+          <Footer />
         </Route>
       </Switch>
     </Router>

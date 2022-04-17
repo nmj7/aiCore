@@ -1,0 +1,56 @@
+.r-app {
+  display: flex;
+  margin-left: 25px;
+  padding: 1rem 1rem 0rem 1rem;
+}
+
+.res {
+  text-decoration: none;
+  color: #1C235F;
+  font-size: larger;
+  text-decoration: underline;
+  /* padding: 1rem 1rem 1rem 1rem; */
+
+}
+
+.des{
+  font-size: medium;
+}
+
+.r-item {
+  font-size: small;
+}
+
+
+.auth{
+  color: #689097;
+  font-size: medium;
+}
+
+.content h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  padding: 2rem 3rem 0.5rem 3rem ;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.h {
+  font-family: 'Poppins', sans-serif;
+    color: #718096;
+    font-size: 01rem;
+    font-weight: 600;
+    padding:0rem 2rem 1rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.subhead{
+  /* margin-left: 35px; */
+  margin-top: 0;
+  color: black;
+}
+
